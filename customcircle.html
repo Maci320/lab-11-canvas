@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="500" height="500">
+</canvas>
+<script>
+function draw() {
+    var sketch = document.getElementById('sketch');
+    var context = sketch.getContext("2d");
+
+    var radius = prompt("Enter a radius.");
+    var color = prompt("Enter a color.");
+    var user_rad = parseInt(radius, 10);
+    var user_color = parseInt(color,10);
+
+
+    context.fillStyle = "user_color"
+    context.beginPath();
+    context.arc(300, 100, user_rad, 0, 2 * Math.PI, true);
+    context.closePath();
+    context.fill();
+
+
+    if (color == red){
+        console.log(ff0000);
+}
+    else (color == blue){
+        console.log(0000ff);
+}
+    else (color == green){
+        console.log(00ff00);
+}  
+      
+}
+</script>
+</body>
+</html>
