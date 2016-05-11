@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="500" height="500">
+</canvas>
+<script>
+function draw() {
+    var sketch = document.getElementById('sketch');
+    var context = sketch.getContext("2d");
+//roof
+    context.fillStyle = "#aa00aa"
+    context.fillRect(70, 30, 150, 50);
+//car body
+    context.fillStyle = "#aa00aa"
+    context.fillRect(50, 60, 190, 55);
+//front wheel
+    context.fillStyle = "#00aaff"
+    context.beginPath();
+    context.arc(85, 115, 25, 0, 2 * Math.PI, true);
+    context.closePath();
+    context.fill();
+//back wheel
+    context.fillStyle = "#00aaff"
+    context.beginPath();
+    context.arc(200, 115, 25, 0, 2 * Math.PI, true);
+    context.closePath();
+    context.fill();
+        
+}
+</script>
+</body>
+</html>
+
+
